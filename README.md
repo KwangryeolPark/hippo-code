@@ -46,6 +46,11 @@ python train.py runner=pl runner.ntrials=2 dataset=ct dataset.timestamp=False da
 ```
 Use `dataset.train_hz=1 dataset.eval_hz=0.5` instead for 200Hz->100Hz experiment.
 
+### Other dataset
+
+You can use other dataset specified in <a href="https://www.timeseriesclassification.com/dataset.php">here</a>
+
+Just edit ***get_data*** in datasets/uea.py
 
 Missing values upsample:
 ```

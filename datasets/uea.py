@@ -58,7 +58,7 @@ def download():
         os.mkdir(base_base_loc)
     if not os.path.exists(base_loc):
         os.mkdir(base_loc)
-    urllib.request.urlretrieve('http://www.timeseriesclassification.com/Downloads/Archives/Multivariate2018_ts.zip',
+    urllib.request.urlretrieve('http://www.timeseriesclassification.com/aeon-toolkit/Archives/Multivariate2018_ts.zip',
                                str(loc))
 
     with zipfile.ZipFile(loc, 'r') as f:

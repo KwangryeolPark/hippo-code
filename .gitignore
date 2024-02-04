@@ -1,4 +1,5 @@
 venv
+*.zip
 
 config/
 lightning_logs/

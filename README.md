@@ -46,11 +46,6 @@ python train.py runner=pl runner.ntrials=2 dataset=ct dataset.timestamp=False da
 ```
 Use `dataset.train_hz=1 dataset.eval_hz=0.5` instead for 200Hz->100Hz experiment.
 
-### Other dataset
-
-You can use other dataset specified in <a href="https://www.timeseriesclassification.com/dataset.php">here</a>
-
-Just edit ***get_data*** in datasets/uea.py
 
 Missing values upsample:
 ```
@@ -61,6 +56,13 @@ Use `dataset.train_ts=1 dataset.eval_ts=0.5` instead for downsample.
 Note that the model cell is called tlsi (short for "timestamped linear scale invariant") to denote a HiPPO-LegS model that additionally uses the timestamps.
 
 
+### Other dataset
+
+You can use other dataset specified in <a href="https://www.timeseriesclassification.com/dataset.php">here</a>
+
+Just edit ***get_data*** in datasets/uea.py
+
+You can use same training code in CharacterTrajectories
 
 ### HiPPO-LegS multiplication in C++
 To compile:

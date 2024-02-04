@@ -23,12 +23,10 @@ def pl_train(cfg, pl_model_class):
     print("profiler args", profiler_args)
     trainer = pl.Trainer(
         # gpus=1 if config['gpu'] else None,
-        gpus=1,
+        num_nodes=1,
         gradient_clip_val=cfg.train.gradient_clip_val,
         max_epochs=1 if cfg.smoke_test else cfg.train.epochs,
-        progress_bar_refresh_rate=1,
         limit_train_batches=cfg.train.limit_train_batches,
-        track_grad_norm=2,
         **profiler_args,
         logger=False,
     )

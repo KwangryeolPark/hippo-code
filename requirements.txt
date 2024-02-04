@@ -2,9 +2,10 @@ pytorch-lightning>=1.1.0
 torchtext
 numpy
 scipy
-sklearn
+scikit-learn
 sktime>=0.5.1
 matplotlib
 tqdm
 hydra-core>=1.0.4
 munch
+torchvision

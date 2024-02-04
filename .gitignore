@@ -1,3 +1,5 @@
+venv
+
 config/
 lightning_logs/
 results/
